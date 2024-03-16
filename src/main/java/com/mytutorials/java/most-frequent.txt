@@ -1,0 +1,83 @@
+ {10, 20, 10, 30, 50, 20, 60, 20, 20, 20, 70, 80, 20, 90};
+
+Manual loop
+
+ i-> 0 outerValue = 10
+	j-> 0 innerValue
+
+	-> 10 = 10 ==> YES
+		-> count = 1
+	-> 10 = 20 ==> NO
+		-> count = 1
+	-> 10 = 10 ==> YES
+		-> count = 2
+	-> 10 = 30 ==> NO
+		-> count = 2
+	-> 10 = 50 ==> NO
+		-> count = 2
+	-> 10 = 20 ==> NO
+		-> count = 2
+	-> 10 = 60 ==> NO
+		-> count = 2
+	-> 10 = 20 ==> NO
+		-> count = 2
+	-> 10 = 20 ==> NO
+		-> count = 2
+	-> 10 = 20 ==> NO
+		-> count = 2
+	-> 10 = 70 ==> NO
+		-> count = 2
+	-> 10 = 80 ==> NO
+		-> count = 2
+	-> 10 = 80 ==> NO
+		-> count = 2
+	-> 10 = 20 ==> NO
+		-> count = 2
+	-> 10 = 30 ==> NO
+		-> count = 2
+
+	count(2) > maxCount(0) => yes
+		maxCount = 2;
+		mostFrequentElement = 10
+
+
+  i-> 0 outerValue = 20
+	j-> 0 innerValue
+
+	-> 20 = 10 ==> NO
+		-> count = 0
+	-> 20 = 20 ==> YES
+		-> count = 1
+	-> 20 = 10 ==> NO
+		-> count = 1
+	-> 20 = 30 ==> NO
+		-> count = 1
+	-> 20 = 50 ==> NO
+		-> count = 1
+	-> 20 = 20 ==> YES
+		-> count = 2
+	-> 20 = 60 ==> NO
+		-> count = 2
+	-> 20 = 20 ==> YES
+		-> count = 3
+	-> 20 = 20 ==> YES
+		-> count = 4
+	-> 20 = 20 ==> YES
+		-> count = 5
+	-> 20 = 70 ==> NO
+		-> count = 5
+	-> 20 = 80 ==> NO
+		-> count = 5
+	-> 20 = 80 ==> NO
+		-> count = 5
+	-> 20 = 20 ==> YES
+		-> count = 6
+	-> 20 = 30 ==> NO
+		-> count = 6
+
+	count (60) > maxCount(2) => yes
+		maxCount = 2;
+		mostFrequentElement = 20
+
+
+		etc.
